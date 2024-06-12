@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Generador de Memes</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>Generador de Memes</h1>
+
+      <div class="image-upload">
+        <input type="file" id="image-input" accept="image/*" hidden />
+        <label for="image-input" class="upload-button">Sube tu meme!</label>
+        <button id="clear-button">X</button>
+      </div>
+
+      <div id="meme-container">
+        <img id="meme-image" src="#" alt="Meme Image" />
+        <div id="top-text"></div>
+        <div id="bottom-text"></div>
+      </div>
+
+      <div class="text-inputs">
+        <input type="text" id="top-text-input" placeholder="Texto superior" />
+        <input
+          type="text"
+          id="bottom-text-input"
+          placeholder="Texto inferior"
+        />
+        <div class="font-size-controls">
+          <button id="decrease-font">-</button>
+          <span id="font-size">24</span>px
+          <button id="increase-font">+</button>
+        </div>
+      </div>
+
+      <button id="download-button">Descargar Meme</button>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
